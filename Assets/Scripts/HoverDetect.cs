@@ -19,7 +19,7 @@ public class HoverDetect : MonoBehaviour
         if (GetComponent<Collider>().Raycast(ray, out hit, 100f))
         {
             print("hover on" + gameObject.name);
-            SceneManager.LoadScene("TV", LoadSceneMode.Single);
+            SceneManager.LoadScene("Notebook", LoadSceneMode.Single);
             if (Input.GetMouseButtonDown(0))
             {
                 //Inspection.SetActive(true);
