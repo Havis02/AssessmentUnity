@@ -14,7 +14,13 @@ public class WardrobeHover : MonoBehaviour
         if (GetComponent<Collider>().Raycast(ray, out hit, 100f))
         {
             print("hover on" + gameObject.name);
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            ReloadPosition.setPosition(player.transform.position, player.transform.rotation);
+
             SceneManager.LoadScene("Wardrobe", LoadSceneMode.Single);
+
+
             if (Input.GetMouseButtonDown(0))
             {
                 //Inspection.SetActive(true);

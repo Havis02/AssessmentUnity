@@ -14,7 +14,7 @@ public class PlantHover : MonoBehaviour
         if (GetComponent<Collider>().Raycast(ray, out hit, 100f))
         {
             print("hover on" + gameObject.name);
-            SceneManager.LoadScene("Plant", LoadSceneMode.Single);
+            SceneManager.LoadScene("PlantAlive", LoadSceneMode.Single);
             if (Input.GetMouseButtonDown(0))
             {
                 //Inspection.SetActive(true);
