@@ -9,11 +9,13 @@ public class EnterScene : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (ReloadPosition.positionSet)
         {
             player.transform.position = ReloadPosition.position;
-           // player.transform.rotation = ReloadPosition.rotation;
+            // player.transform.rotation = ReloadPosition.rotation;
 
 
         }

@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PlantAlive.unity
     guid: 1fb36e01cca872144a27cf0b6f39ed93
   - enabled: 1
-    path: Assets/Scenes/Piano.unity
+    path: Assets/Scenes/Painting.unity
     guid: 9304d65942e2e27459b2badaa9cd27ca
   - enabled: 1
     path: Assets/Scenes/Phone.unity
@@ -42,6 +42,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Bin.unity
     guid: 5e875c4363a34694cb8f770ff1dcf16d
   - enabled: 1
+    path: Assets/Scenes/Teddybear.unity
+    guid: 5c742908e9b8c504f8a5b1086bbdc994
+  - enabled: 1
     path: Assets/Scenes/Bed.unity
     guid: a569905f8b0a5f84f9aab99f44dc72a2
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: f43ffe51b3e8d0b4b990be40898f302b
   m_configObjects: {}

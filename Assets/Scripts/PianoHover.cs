@@ -10,10 +10,14 @@ public class PianoHover : MonoBehaviour
     {
         Ray ray = Camera.main.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (GetComponent<Collider>().Raycast(ray, out hit, 100f))
+        if (GetComponent<Collider>().Raycast(ray, out hit, 5f))
         {
             print("hover on" + gameObject.name);
-            SceneManager.LoadScene("Piano", LoadSceneMode.Single);
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            ReloadPosition.setPosition(player.transform.position, player.transform.rotation);
+
+            SceneManager.LoadScene("Painting", LoadSceneMode.Single);
             if (Input.GetMouseButtonDown(0))
             {
                 //Inspection.SetActive(true);

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class CountdownTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeRemaining = 10f;
+        TimeRemaining = 15f;
 
     }
 
@@ -21,7 +22,11 @@ public class CountdownTimer : MonoBehaviour
         }
        else
         {
-            Debug.Log("Time is Up!");
+            SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
+            if (Input.GetMouseButtonDown(0))
+            {
+
+            }
         }
     }
 }
