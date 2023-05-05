@@ -10,7 +10,7 @@ public class DeadPlants : MonoBehaviour
     {
         Ray ray = Camera.main.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (GetComponent<Collider>().Raycast(ray, out hit, 5f))
+        if (GetComponent<Collider>().Raycast(ray, out hit, 2f))
         {
             print("hover on" + gameObject.name);
 
