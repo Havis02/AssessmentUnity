@@ -9,7 +9,7 @@ public class CountdownTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeRemaining = 15f;
+        TimeRemaining = 30f;
 
     }
 
