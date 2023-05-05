@@ -17,7 +17,7 @@ public class BearHover : MonoBehaviour
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             ReloadPosition.setPosition(player.transform.position, player.transform.rotation);
 
-            SceneManager.LoadScene("PlantDead", LoadSceneMode.Single);
+            SceneManager.LoadScene("Teddybear", LoadSceneMode.Single);
             if (Input.GetMouseButtonDown(0))
             {
                 //Inspection.SetActive(true);
