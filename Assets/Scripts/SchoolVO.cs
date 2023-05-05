@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReadingVO : MonoBehaviour
+public class SchoolVO : MonoBehaviour
 {
-    AudioSource readingSound;
+    AudioSource schoolSound;
     // Start is called before the first frame update
     void Start()
     {
-        readingSound = GetComponent<AudioSource>();
+        schoolSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class ReadingVO : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            readingSound.Play();
+            schoolSound.Play();
         }
 
     }
@@ -28,8 +28,7 @@ public class ReadingVO : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            readingSound.Stop();
+            schoolSound.Stop();
         }
     }
 }
-
